@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        #light-panel .light {
+            width: 50px;
+            height: 20px;
+            display: inline-block;
+        }
+
+        #light-panel {
+            position: absolute;
+            inset: 0 0 0 0;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .buttons {
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            inset: 0 0 0 0;
+            margin: auto;
+            top: 7em;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            margin: 3px;
+            border: 2px solid grey;
+        }
+
+        button:first-child {
+            background-color: lightskyblue;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        button:last-child {
+            background-color: lightcoral;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="buttons">
+        <button id="start-btn"> Start</button>
+        <button id="end-btn">Stop</button>
+    </div>
+    <audio src="Assets\audio\Knight Rider Sms ! Knight Rider ! Theme.mp3"></audio>
+    <section id="light-panel">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </section>
+    <script src="lib\jquery-3.6.4.min.js"></script>
+    <script src="Assets\scripts\index.js"></script>
+</body>
+
+</html>
